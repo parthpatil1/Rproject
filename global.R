@@ -1,0 +1,12 @@
+library(shiny)
+library(tidyverse)
+library(shinydashboard)
+library(shinyWidgets)
+library(shinyjs)
+library(DT)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+file_dir <- paste0(getwd(),"/data/")
+imdb<- read.csv(paste0(file_dir, "IMDB_Movies", ".csv"),header = T)
+
